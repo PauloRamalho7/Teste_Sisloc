@@ -1,0 +1,10 @@
+CREATE TABLE Produto (
+  Codigo INTEGER(10) PRIMARY KEY NOT NULL, 
+  nome VARCHAR(50) UNIQUE, 
+  valor FLOAT(10));
+
+CREATE TABLE ProdutoDesconto (
+  codigo INTEGER(10), 
+  quantidade INTEGER(10), 
+  valor FLOAT(10), 
+  PRIMARY KEY(codigo, quantidade));
